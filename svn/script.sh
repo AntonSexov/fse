@@ -65,7 +65,7 @@ cd trunk && svn commit -m "r7 commit" --username=bolvan && cd ..
 cd trunk && svn switch $SVN_BRANCH_BLUE && cd ..
 echo "r8" >> trunk/message8.txt
 svn add trunk/message8.txt
-cd trunk && svn commit -m "r8 commit" --username=bolvan && cd ..
+cd trunk && svn commit -m "r8 commit" --username=umnik && cd ..
 
 #r9
 cd trunk && svn switch $SVN_TRUNK && cd ..
@@ -77,7 +77,7 @@ cd trunk && svn commit -m "r9 commit" --username=bolvan && cd ..
 cd trunk && svn switch $SVN_BRANCH_BLUE && cd ..
 echo "r10" >> trunk/message10.txt
 svn add trunk/message10.txt
-cd trunk && svn commit -m "r10 commit" --username=bolvan && cd ..
+cd trunk && svn commit -m "r10 commit" --username=umnik && cd ..
 
 #merging blue into red + r11
 cd trunk && svn switch $SVN_BRANCH_RED
