@@ -4,7 +4,7 @@
 mkdir lab2
 cd lab2
 git init
-cd init
+cd lab2
 mkdir reports
 
 # r0
