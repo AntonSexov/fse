@@ -10,7 +10,7 @@ SVN_BRANCH_BLUE=file://$SCRIPT_DIR/lab2/branches/blue
 #init
 svnadmin create lab2
 svn mkdir -m "trunk" $SVN_TRUNK
-svn mkdir -m "brances" $SVN_BRANCHES
+svn mkdir -m "branches" $SVN_BRANCHES
 svn checkout $SVN_TRUNK trunk
  
 #r0
