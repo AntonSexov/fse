@@ -20,7 +20,7 @@ git commit -m "r1 commit" --author="bolvan"
 git checkout -b blue
 echo "r2" >> thunk/msg2.txt
 git add ./thunk/msg2.txt
-git commit -m "r2 commit" --author="umnnik"
+git commit -m "r2 commit" --author="umnik"
 
 # r3
 git checkout -b red
@@ -44,7 +44,7 @@ git commit -m "r5 commit" --author="bolvan"
 git checkout blue 
 echo "r6" >> thunk/msg6.txt
 git add ./thunk/msg6.txt
-git commit -m "r6 commit" --author="umnnik"
+git commit -m "r6 commit" --author="umnik"
 
 # r7
 git checkout main
@@ -68,7 +68,7 @@ git commit -m "r9 commit" --author="bolvan"
 git checkout blue 
 echo "r10" >> thunk/msg10.txt
 git add ./thunk/msg10.txt
-git commit -m "r10 commit" --author="umnnik"
+git commit -m "r10 commit" --author="umnik"
 
 # merging blue into red + r11
 git checkout red
