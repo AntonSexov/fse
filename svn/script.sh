@@ -82,11 +82,8 @@ cd trunk && svn commit -m "r10 commit" --username=umnik && cd ..
 #merging blue into red + r11
 cd trunk && svn switch $SVN_BRANCH_RED
 svn up 
-svn merge --force $SVN_BRANCH_BLUE
+svn merge --force $SVN_BRANCH_BLUE -m "r11"
 cd ..
-echo "r11" >> trunk/message11.txt
-svn add trunk/message11.txt
-cd trunk && svn commit -m "blue merged and r11 commit" --username=bolvan && cd ..
 
 #r12
 echo "r12" >> trunk/message12.txt
@@ -96,11 +93,8 @@ cd trunk && svn commit -m "r12 commit" --username=bolvan && cd ..
 #meging into master + r13
 cd trunk && svn switch $SVN_TRUNK
 svn up 
-svn merge --force $SVN_BRANCH_RED
+svn merge --force $SVN_BRANCH_RED -m "r13"
 cd ..
-echo "r13" >> trunk/message13.txt
-svn add trunk/message13.txt
-cd trunk && svn commit -m "red merged and r13 commit" --username=bolvan && cd ..
 
 #r14
 echo "r14" >> trunk/message14.txt
