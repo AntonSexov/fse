@@ -73,21 +73,16 @@ git commit -m "r10 commit"
 
 # merging blue into red + r11
 git checkout red
-git merge blue -m "merge"
-echo "r11" >> reports/msg11.txt
-git add ./reports/msg11.txt
-git  commit -m "blue merged and r11 commit" 
+git merge blue -m "r11"
 
 # r12
 echo "r12" >> reports/msg12.txt
 git add ./reports/msg12.txt
 git commit -m "r12 commit" 
+
 # merging red into master + r13
 git checkout master 
-git merge red -m "merge"
-echo "r13" >> reports/msg13.txt
-git add  ./reports/msg13.txt
-git commit -m "red merged and r13 commit" 
+git merge red -m "r13"
 
 # r14
 echo "r14" >> reports/msg14.txt
