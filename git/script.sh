@@ -77,12 +77,13 @@ git merge blue -m "r11"
 
 # r12
 echo "r12" >> reports/msg12.txt
-git add ./reports/msg12.txt
+echo "FORCING A CONFLICT IN R9" >> reports/msg9.txt
+git add .
 git commit -m "r12 commit" 
 
 # merging red into master + r13
 git checkout master 
-git merge red -m "r13"
+git merge -s ours red -m "r13"
 
 # r14
 echo "r14" >> reports/msg14.txt
